@@ -4,7 +4,6 @@
 - Base: https://komikindo.ch
 - Channel: https://whatsapp.com/channel/0029VaxtSLDGZNCjvEXsw93f
 */
-```
 const axios = require("axios");
 const cheerio = require("cheerio");
 
@@ -78,4 +77,3 @@ async function getDetail(url) {
   console.log(detailResult);
 })();
 
-```
