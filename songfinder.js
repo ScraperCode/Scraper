@@ -6,13 +6,18 @@ async function songfinder(query) {
       q: query,
     },
     headers: {
-      "user-agent":
-        "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36",
-      accept: "*/*",
+      "accept": "*/*",
+      "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
       "content-type": "application/json",
-      "sec-ch-ua":
-        '"Not(A:Brand";v="8", "Chromium";v="144", "Google Chrome";v="144"',
-      referer: "https://flac.zumy.dev/",
+      "priority": "u=1, i",
+      "referer": "https://flac.zumy.dev/",
+      "sec-ch-ua": '"Not(A:Brand";v="8", "Chromium";v="144", "Google Chrome";v="144"',
+      "sec-ch-ua-mobile": "?1",
+      "sec-ch-ua-platform": '"Android"',
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36"
     },
   });
   const tracks = data.data.tracks;
